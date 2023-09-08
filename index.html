@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito portfolio | Danese Federica</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("PLmAfU8bbhQolTwrB");
+})();
+</script>
+</head>
+<body>
+ 
+  <!--Menu-->
+  <header class="header">
+    <nav class="content">
+      <a class="logo" href="#home">Federica<span>Danese</span>.</a>
+      <ul class="menu"> 
+        <li><a href="#home">Home</a></li>
+        <li><a href="about">Chi sono</a></li>
+        <li><a href="skills">Skills</a></li>
+        <li><a href="portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contatti</a></li>
+      </ul>
+      <div class="header-icons">
+        <div class="icon-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+    <!--Home-->
+    <section class="home" id="home">
+      <div class="home-container">
+        <div class="home-img"> 
+          <img src="assets/images/photo1.jpeg" alt="photo">
+        </div>
+        <div class="home-text">
+          <h3>Ciao, io sono</h3>
+          <h1>Federica Danese</h1>
+          <h3>e ti do il benvenuto sul mio sito!</h3>
+          <h4>Sto studiando per diventare <span>Full Stack Developer</span>.</h4>
+          <p>Ho scelto di sviluppare questo portfolio con l'obiettivo di mostrare le mie capacità. <br> A tale scopo, intendo includere i miei 
+            progetti personali al fine di esplorare opportunità nel contesto digitale.
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <!--About-me-->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>Su di me</h2>
+          <h3>Ho iniziato il percorso di Master in Full Stack Development su Start2Impact University.</h3>
+          <p>Ho deciso di intraprendere questo percorso con l'obiettivo di padroneggiare una varietà di strumenti informatici e acquisire le 
+             competenze necessarie per diventare un abile programmatore. Questo mi consentirà di creare siti web non solo esteticamente accattivanti, 
+             ma soprattutto intuitivi e performanti. <br>
+             Se sei curioso di conoscere il mio percorso attraverso formazione e lavoro, nonché le motivazioni che mi hanno spinto verso il 
+             mondo digitale, ti invito a premere il pulsante qui sotto.
+          </p> 
+          <div class="main-btn">
+            <a href="about" class="main-button">Per saperne di più</a>
+            <a href="#contact" class="main-button">Contatti</a>  
+          </div>  
+        </div>
+        <div class="about-img">
+          <img src="assets/images/photo2.jpeg" alt="photo">
+        </div>
+      </div>
+    </section>
+  
+    <!--Link choices-->
+    <section>
+      <div class="center">
+        <h1>Esplora ciò che preferisci!</h1>
+      </div>
+      <div class="container">
+          <div class="child" id="box1">
+            <a href="about" class="icon">
+            <div class="img-icon">
+              <img src="assets/images/about.png" alt="about">
+            </div>
+            <div class="text-box"><p>About</p></div>
+            </a>
+          </div>
+          <div class="child" id="box2">
+            <a href="skills" class="icon">
+            <div class="img-icon">
+              <img src="assets/images/skills.png" alt="skills">
+            </div>
+            <div class="text-box"><p>Skills</p></div>
+            </a>
+          </div>
+          <div class="child" id="box3">
+            <a href="portfolio" class="icon">
+            <div class="img-icon">
+              <img src="assets/images/portfolio.png" alt="porfolio">
+            </div>
+            <div class="text-box"><p>Portfolio</p></div>
+            </a>
+        </div>
+        <div class="child" id="box4">
+          <a href="#contact" class="icon">
+          <div class="img-icon">
+            <img src="assets/images/contact.png" alt="contact">
+          </div>
+          <div class="text-box"><p>Contatti</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  
+  <!--Contact-->
+  <section class="contact" id="contact">
+    <div class="contact-box">
+      <div class="contact-text">
+        <h2>Contatti</h2>
+        <p>Vuoi sapere qualcosa di più su di me o farmi delle domande? Allora scrivi nel form!</p>
+        <img src="assets/images/contacts.svg" alt="contact">
+      </div>
+      <form id="contact-form">
+          <input type="text" id="name" placeholder="Nome" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <textarea id="message" cols="30" rows="10" placeholder="Il tuo messaggio" required></textarea>
+         <button class="main-button" onclick="SendMail()">Invia</button>
+        </form>
+    </div>
+  </section> 
+  
+  <!--Site footer-->
+  <footer class="site-footer">
+    <div class="container-footer">
+      <div class="box-footer">
+        <h5>FedericaDanese.</h5>
+        <p>Grazie per la lettura!</p>
+        <div class="copyright-text">
+          <p>Federica Danese. © Copyright 2023.</p> 
+        </div>  
+      </div>
+      <div class="box-footer">
+        <h5>Menu</h5>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="about">Chi sono</a></li>
+          <li><a href="skills">Skills</a></li>
+          <li><a href="portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="box-footer">
+        <h5>Social</h5>
+        <ul class="social-icons">
+          <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100009888428708" target="_blank"><img src = "./assets/images/social/facebook.svg" alt="facebook icon"/></a></li>
+          <li><a class="instagram" href="https://www.instagram.com/federica__danese/" target="_blank"><img src = "./assets/images/social/instagram.svg" alt="instagram icon"/></a></li>
+          <li><a class="github" href="https://github.com/Federica-Danese" target="_blank"><img src = "./assets/images/social/github.svg" alt="github icon"/></a></li>   
+        </ul>
+      </div>
+    </div>
+  </footer>
+     
+  
+  
+   </body>
+  </html>
+  
+

@@ -1,0 +1,617 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box; 
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem; 
+  }
+
+  :root {
+    --bg-color: #ebf0f2;
+    --main-color: #9854ffa2;
+    --second-main-color: #2f253e;
+    --text-color: #040C0D;
+    --btn-color: #ebe536;
+    --h1-font: 3.7rem;
+    --h2-font: 2.4rem;
+    --h3-font: 1.8rem;
+    --h4-font: 1.4rem;
+    --h5-font: 1.1rem;
+    --p-font: 1rem;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  /*Scrollbar*/
+  html::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  html::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--text-color);
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, var(--main-color)), color-stop(1, var(--second-main-color)));
+    border: 1px solid var(--text-color);
+  }
+
+  /*Menu*/
+  .header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--bg-color);
+  }
+  
+  .content{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .logo{
+    margin-right: 10%;
+    padding: 1.5rem;
+    color: var(--main-color);
+    opacity: 0.8;
+    font-size: var(--h4-font);
+    font-weight: bold;
+  }
+
+  .logo span{
+    color: var(--second-main-color);
+  }
+  
+  .menu{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .menu li{
+    display: inline-block;
+  }
+
+  .menu li a{
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--main-color);
+    opacity: 0.8;
+    font-size: var(--h4-font);
+    font-weight: bold;
+  }
+  
+  .menu li a:hover{
+    color: var(--second-main-color);
+  }
+
+  /*Skills*/
+  .skills-title{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+  }
+
+  .skills-title h2{
+    font-size: var(--h2-font);
+    color: var(--second-main-color);
+    margin: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  .skills-title p{
+    font-size: var(--p-font);
+    margin: 1.5rem;
+  }
+  
+  .skills-title span{
+    color: var(--btn-color);
+  }
+
+  .skill-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2% 0;
+  }
+  
+  .skill-bar{
+    width: 350px;
+    margin: 1% 5%;
+  }
+
+  .skill-main .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  
+  .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    position: relative;
+    background-color: var(--second-main-color);
+    border-radius: 25px;
+    margin-top: 5px;
+    border: 1px solid var(--second-main-color);
+  }
+  
+  .skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    border-right: 1px solid var(--btn-color);
+  }
+  
+  .skill-bar .bar .html{
+    width: 85%;
+    animation: html 3s;
+  }
+  
+  @keyframes html{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 85%;
+    }
+  }
+  
+  .skill-bar .bar .css{
+    width: 80%;
+    animation: css 3s;
+  }
+  @keyframes css{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 80%;
+    }
+  }
+  
+  .skill-bar .bar .sass{
+    width: 25%;
+    animation: sass 3s;
+  }
+  @keyframes sass{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 25%;
+    }
+  }
+  
+  .skill-bar .bar .bootstrap{
+    width: 50%;
+    animation: bootstrap 3s;
+  }
+  @keyframes bootstrap{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 50%;
+    }
+  }
+  
+  .skill-bar .bar .javascript{
+    width: 25%;
+    animation: javascript 3s;
+  }
+
+  @keyframes javascript{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 25%;
+    }
+  }
+  
+  .skill-bar .bar .java{
+    width: 40%;
+    animation: java 3s;
+  }
+
+  @keyframes java{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 40%;
+    }
+  }
+  
+  .skill-bar .bar .php{
+    width: 40%;
+    animation: php 3s;
+  }
+
+  @keyframes php{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 40%;
+    }
+  }
+
+  /*Soft skills card*/
+  .main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1% 0;
+  }
+
+  .main-container h4{
+    font-size: var(--h4-font);
+    text-align: center;
+    color: var(--btn-color);
+  }
+
+  .main-container p {
+    font-size: var(--p-font);
+    line-height: 1.4;
+    color: var(--second-main-color);
+    margin-bottom: 1.5rem;
+  }
+
+  .wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 30rem;
+    height: 17rem;
+    margin: 2rem auto;
+    border: 8px solid;
+    border-image: linear-gradient(-50deg, var(--second-main-color), var(--main-color), var(--btn-color), var(--main-color), var(--second-main-color)) 1;
+    transition: .3s ease-in-out;
+    position: relative;
+    overflow: hidden;  
+  }
+  
+  .overlay {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 1rem .75rem;
+    background: var(--second-main-color);
+    transition: .6s ease-in-out;
+    z-index: 1;
+  }
+    
+  .overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
+    padding: .5rem 0 0 .5rem;
+    transition: .3s ease-in-out .2s;
+    z-index: 1;
+  }
+
+  .image-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-size: cover;
+    transition: .3s ease-in-out;
+    background-color: #9854FF;
+  }
+
+  .image-content img{
+    width: 100%;
+    height: 90%;
+  }
+
+  .text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 17rem;
+    height: 100%;
+    padding: 3vmin 4vmin;
+    background: var(--bg-color);
+  }
+    
+  .wrap:hover .overlay{
+    transform: translateX(-20rem);  
+  }
+
+  .wrap:hover .image-content {
+    width: 90%;
+  }
+
+  .wrap:hover .overlay-content {
+    border: none;
+    transform: translateX(20rem);
+  }
+
+  .animate {
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+    animation-fill-mode: backwards;
+  }
+    
+  .pop { 
+    animation-name: pop; 
+  }
+
+  @keyframes pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+
+  .slide { 
+    animation-name: slide; 
+  }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translate(4em, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+  .slide-left { 
+    animation-name: slide-left; 
+  }
+  @keyframes slide-left {
+    0% {
+      opacity: 0;
+      transform: translate(-40px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+  .slide-up {
+    animation-name: slide-up;
+  }
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(3em);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /*Site footer*/
+  .site-footer .container-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .site-footer{
+    background-color: var(--second-main-color);
+    padding:30px 20px;
+    font-size:15px;
+    line-height:24px;
+  }
+  
+  .site-footer p, a{
+    color:var(--main-color);
+  }
+  
+  .site-footer h5{
+    margin-top:5px;
+    color:var(--btn-color);
+    font-size:var(--h5-font);
+    letter-spacing:2px;
+  }
+  
+  .site-footer a:hover{
+    color:var(--btn-color);
+    text-decoration:none;
+  }
+  
+  .site-footer .social-icons{
+    margin: 0 25%;
+    list-style:none;
+    width:35px;
+  }
+  
+  .site-footer .social-icons a{
+    width:40px;
+    height:40px;
+    border-radius:100%;
+    background-color:var(--second-main-color)
+  }
+  
+  .site-footer .social-icons a:active,.social-icons a:focus,.social-icons a:hover{
+    background-color: var(--btn-color);
+  }
+  
+  .site-footer .copyright-text{
+    padding-top: 30%;
+    color: var(--main-color);
+  }
+  
+  .site-footer .box-footer {
+    text-align: center;
+  }
+ 
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  :root {
+    --h1-font: 3rem;
+    --h2-font: 2rem;
+    --h3-font: 1.6rem;
+    --h4-font: 1.2rem;
+    --h5-font: 1rem;
+    --p-font: 0.9rem;
+  }
+
+  /*Menu responsive*/
+  .logo{
+    padding: 1.5rem 0.7rem;
+  }
+  
+  .menu li a{
+    padding: 1.5rem 0.7rem;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --h1-font: 2.5rem;
+    --h2-font: 1.8rem;
+    --h3-font: 1.5rem;
+    --h4-font: 1.1rem;
+    --h5-font: 0.9rem;
+    --p-font: 0.8rem;
+  }
+
+   /*Menu responsive*/
+   .content{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+  }
+  
+  .logo{
+    padding: 2.5% 5%;
+  }
+
+  .menu{
+    position: absolute;
+    top: 50px;
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100vh;
+    height: 0vh;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    
+  }
+
+  .menu li{
+    width: 100%;
+    
+  }
+
+  .menu-open .menu{
+    height: 100vh;
+    padding: 2%;
+  }
+
+  .icon-hamburger{
+    padding: 0 30px 0;
+    cursor: pointer;
+  }
+
+  .icon-hamburger span{
+    width: 28px;
+    height: 1.5px;
+    display: block;
+    margin-top: 10px;
+    background: var(--main-color);
+  }
+
+  /*Soft skills card responsive*/
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .wrap {
+    width: 88%;
+    max-width: 300px;
+    height: auto;
+    margin: 1rem;
+  }
+
+  .overlay{
+    height: auto;
+  }
+
+  .main-container h4 {
+    font-size: 1rem;
+  }
+  
+  .text p {
+    font-size: 0.9rem;
+  }
+
+  .wrap {
+    max-width: 100%;
+  }
+
+  .overlay-content, .text {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: auto;
+    height: auto;
+    transform: none;
+    animation: none; 
+  }
+
+  .image-content{
+    width: 0;
+  }
+
+  .overlay-content{
+    width: 5rem;
+  }
+
+   /*Site footer responsive*/
+   .site-footer .container-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-footer .social-icons {
+    margin-top: 10px;
+  }
+
+  .site-footer .copyright-text {
+    padding-top: 0;
+  }
+
+  .site-footer .container-footer {
+    padding: 20px;
+  }
+
+  .site-footer .box-footer {
+    margin: 20px 0;
+  }
+}
