@@ -1,11 +1,11 @@
 
-/*Menu*/
-let item=document.querySelector('.icon-hamburger');
-item.addEventListener("click", function(){
-  document.body.classList.toggle('menu-open');
-})
+document.addEventListener("DOMContentLoaded", function () {
+  let item = document.querySelector('.icon-hamburger');
+  item.addEventListener("click", function(){
+    document.body.classList.toggle('menu-open');
+  });
+});
 
-/*Form*/
 function SendMail() {
   
   var serviceID = "service_2jj3vsv";
@@ -29,6 +29,3 @@ function SendMail() {
   )
   .catch();
 }
-
-
-  
