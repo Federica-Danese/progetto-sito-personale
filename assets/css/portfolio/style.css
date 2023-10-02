@@ -25,6 +25,9 @@
 
   body{
     background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
   a{
@@ -103,12 +106,10 @@
   
   /*Section portfolio*/
   .projects{
-    position: relative;
-    min-height: 70vh;
+    flex-grow: 1;
   }
   
   .container-project{
-    padding-bottom: 20%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -122,10 +123,10 @@
 
   /*Site footer*/
   #site-footer{
-    position: absolute;
+    padding: 20px;
+    position: fixed;
     bottom: 0;
-    width: 97.4%;
-    height: 20%;
+    width: 100%;
   }
   
   .site-footer .container-footer{
@@ -202,21 +203,6 @@
   .menu li a{
     padding: 1.5rem 0.7rem;
   }
-
-  /*Section portfolio*/
-  .projects{
-    position: relative;
-    min-height: 60vh;
-  }
-  .container-project{
-    padding-bottom: 20%;
-  }
-  #site-footer{
-    position: absolute;
-    bottom: 0;
-    width: 97.4%;
-    height: 20%;
-  }
 }
 
 @media (max-width: 767px) {
@@ -273,23 +259,6 @@
     background: var(--main-color);
   }
 
-  /*Section portfolio responsive*/
- 
-
-  .projects{
-    position: relative;
-    min-height: 20vh;
-  }
-  .container-project{
-    padding-bottom: 65%;
-  }
-  #site-footer{
-    position: absolute;
-    bottom: 0;
-    width: 89.5%;
-    height: 65%;
-  }
-
    /*Site footer*/
    .site-footer .container-footer {
     flex-direction: column;
@@ -297,19 +266,16 @@
   }
 
   .site-footer .social-icons {
-    margin-top: 10px;
+    margin: 5px 20px;
   }
 
   .site-footer .copyright-text {
     padding-top: 0;
   }
 
-  .site-footer .container-footer {
-    padding: 20px;
-  }
-
   .site-footer .box-footer {
-    margin: 20px 0;
+    margin: 10px 0;
+    margin-right: 30px;
   }
 }
 
